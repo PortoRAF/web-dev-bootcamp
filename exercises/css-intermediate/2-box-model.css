@@ -1,0 +1,13 @@
+p {
+  /* content width and height */
+  width: 50%;
+
+  /* borders */
+  border: 2px solid blue;
+
+  /* padding */
+  padding: 10px 0px 10px 40px;
+
+  /* margin */
+  margin: 50px 20px;
+}
