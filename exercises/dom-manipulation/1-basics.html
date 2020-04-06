@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      .purple {
+        background: purple;
+      }
+    </style>
+
+    <title>Basics</title>
+  </head>
+  <body>
+    <h1>I am an h1!</h1>
+    <p id="first" class="special">Hello</p>
+    <p class="special">Goodbye</p>
+    <p>Hi again</p>
+    <p id="last">Goodbye again</p>
+    <button>CLICK ME</button>
+
+    <script>
+      // var h1 = document.querySelector("h1");
+      // var p = document.querySelectorAll("p");
+      // var first = document.getElementById("first");
+      // var last = document.getElementById("last");
+      // var special = document.getElementsByClassName("special");
+      // var specials = document.querySelectorAll(".special");
+      // console.log(h1);
+      // console.log(p);
+      // console.log(first);
+      // console.log(last);
+      // console.log(special);
+      // console.log(specials);
+      let isPurple = false;
+      document.querySelector("button").addEventListener("click", () => {
+        // if (isPurple) {
+        //   isPurple = false;
+        //   return (document.body.style.background = "white");
+        // }
+        // isPurple = true;
+        // document.body.style.background = "purple";
+        document.body.classList.toggle("purple");
+      });
+    </script>
+  </body>
+</html>
