@@ -1,14 +1,43 @@
 body {
   background-color: #232323;
+  margin: 0;
+  font-family: Montserrat;
 }
 
 h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.1;
   color: white;
+  background-color: steelblue;
+  margin: 0;
+  padding: 20px 0;
 }
 
 span {
   /* color: white; */
+  /* text-transform: uppercase; */
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
   text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+button:hover {
+  color: white;
+  background-color: steelblue;
 }
 
 .square {
@@ -17,14 +46,19 @@ span {
   padding-bottom: 30%;
   float: left;
   margin: 1.66%;
+  border-radius: 15%;
+  transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
 }
 
 .selected {
-  background-color: blue;
+  color: white;
+  background-color: steelblue;
 }
 
 #container {
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 600px;
 }
 
@@ -32,4 +66,14 @@ span {
   background-color: white;
   height: 30px;
   text-align: center;
+}
+
+#colorDisplay {
+  font-size: 200%;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+  font-weight: 700;
 }
