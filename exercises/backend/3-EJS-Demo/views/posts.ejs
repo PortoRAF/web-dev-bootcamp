@@ -1,0 +1,15 @@
+<%- include ("partials/header") %>
+
+<h1>The Posts Page</h1>
+
+<% posts.forEach(post => { %>
+<li><%= post.title %> - <strong><%= post.author %></strong></li>
+<% }); %>
+
+<form action="/posts/add" method="post">
+  <input type="text" name="title" placeholder="Title" />
+  <input type="text" name="author" placeholder="Author" />
+  <button>Create a new post</button>
+</form>
+
+<%- include ("partials/footer") %>
