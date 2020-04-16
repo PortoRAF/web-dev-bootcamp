@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/style.css" />
+
+<h1>Results Page</h1>
+<a href="/">New Search</a>
+<div class="flex-container">
+  <% data.Search.forEach(movie => { %>
+  <div class="flex-item">
+    <img src="<%= movie.Poster %>" />
+  </div>
+  <% }) %>
+</div>

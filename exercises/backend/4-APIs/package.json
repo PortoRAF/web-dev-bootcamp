@@ -1,0 +1,21 @@
+{
+  "name": "4-apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "movies.js",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "locus": "^2.0.4",
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "dev": "env-cmd nodemon movies.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
